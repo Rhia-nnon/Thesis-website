@@ -7,10 +7,25 @@ body {
 
 #container {
     width: 900px;
+    padding: 10px;
+    border-style: double;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    background-color: rgb(28, 33, 40);
+    margin: 0 auto;
+    position: relative;
+}
 
+aside {
+    float: left;
+    width: 150px;
+    background-color: rgb(28, 33, 40);
+    border-style: double;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
 }
 
 h1,
@@ -28,11 +43,6 @@ p {
     text-justify: inter-word;
 }
 
-aside {
-    float: left;
-    width: 200px;
-    height: auto;
-}
 
 ul.package {
     list-style-type: square;
