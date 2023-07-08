@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Análisis de Datos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+
+    <aside>
+        <center>
+            <h2>Contenido</h2>
+        </center>
+        <table class="table">
+
+            <tr>
+                <td height=40px><a href="#evol_act">Evolución del Activo Total</a><br></td>
+            </tr>
+            <tr>
+                <td height=40px><a href="#frcst_efect">Pronóstivo Efectivo</a><br></td>
+            </tr>
+            <tr>
+                <td height=40px><a href="#evol_ing">Evolución Ingresos Netos</a><br></td>
+            </tr>
+            <tr>
+                <td height=40px><a href="#frcst_ing">Pronóstico Ingresos Netos</a><br></td>
+            </tr>
+        </table>
+    </aside>
+    <div id="container">
+
+        <h1>Análisis de Datos mediante lenguaje R para la auditoría</h1>
+
+        <p>El presente sitio web contiene información estadística extraída a partir de una base de datos. La información
+            corresponde a los Estados de Situación Financiera y Estado de Resultados, los cuales se encuentran
+            distribuidos de forma trimestral para los periodos 2010 hasta el primer trimestre del año 2023</p>
+        <hr>
+        <p> Los paquetes utilizados fueron
+        <ul class="package">
+            <li>tidyverse</li>
+            <li>stargazer</li>
+            <li>lubridate</li>
+            <li>forecast</li>
+            <li>readxl</li>
+        </ul>
+        </p>
+        <hr>
+        <img id="evol_act" src="evol_act.png">
+        <hr>
+        <img id="frcst_efect" src="frcst_efect.png">
+        <hr>
+        <img id="evol_ing" src="evol_ing.png">
+        <hr>
+        <img id="frcst_ing" src="frcst_ing.png">
+    </div>
+</body>
+
+</html>
