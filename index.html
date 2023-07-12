@@ -109,33 +109,35 @@
         margin: 0 auto;
         position: relative;
     }
+
+    body {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+        font-size: 14px;
+    }
 </style>
 
 <body>
-
-
     <aside>
         <center>
             <h2>Contenido</h2>
         </center>
         <table class="table">
-
+            <td><b>Librería ggplot2</b></td>
             <tr>
                 <td height=40px><a href="#evol_act">Evolución del Activo Total</a><br></td>
             </tr>
             <tr>
-                <td height=40px><a href="#frcst_efect">Pronóstivo Efectivo</a><br></td>
-            </tr>
-            <tr>
                 <td height=40px><a href="#evol_ing">Evolución Ingresos Netos</a><br></td>
             </tr>
+            <td><b>Librería forecast</b></td>
             <tr>
                 <td height=40px><a href="#frcst_ing">Pronóstico Ingresos Netos</a><br></td>
             </tr>
+            <tr>
+                <td height=40px><a href="#frcst_efect">Pronóstivo Efectivo</a><br></td>
+            </tr>
         </table>
     </aside>
-
-
     <div class="window scale-down">
         <div class="title-bar">
             <button aria-label="Close" class="close"></button>
@@ -147,12 +149,15 @@
 
         <h1>Análisis de Datos mediante lenguaje R para la auditoría</h1>
 
-        <p>El presente sitio web contiene información estadística extraída a partir de una base de datos. La información
-            corresponde a los Estados de Situación Financiera y Estado de Resultados, los cuales se encuentran
-            distribuidos de forma trimestral para los periodos 2010 hasta el primer trimestre del año 2023</p>
+        <p>El presente sitio web contiene información estadística extraída a partir de una base de datos de Hites S.A.
+            <br>
+            La información corresponde a los Estados de Situación Financiera y Estado de Resultados, los cuales se
+            encuentran
+            distribuidos de forma trimestral para los periodos 2010 hasta el primer trimestre del año 2023
+        </p>
         <hr>
         <p> Los paquetes utilizados fueron:
-        <ul class="package">
+        <ul class="package" type="cyrcle">
             <li>tidyverse</li>
             <li>stargazer</li>
             <li>lubridate</li>
@@ -161,16 +166,13 @@
         </ul>
         </p>
         <hr>
-        <code>
-
-               </code>
         <img id="evol_act" src="evol_act.png">
-        <hr>
-        <img id="frcst_efect" src="frcst_efect.png">
         <hr>
         <img id="evol_ing" src="evol_ing.png">
         <hr>
         <img id="frcst_ing" src="frcst_ing.png">
+        <hr>
+        <img id="frcst_efect" src="frcst_efect.png">
     </div>
 </body>
 
