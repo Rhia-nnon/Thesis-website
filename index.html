@@ -29,6 +29,19 @@
             <div class="left">
                 <div class="box">
                     <div class="boxwrap">
+                        <div class="date">
+                            <b>Fecha actual:</b>
+                            <script>
+                                var today = new Date();
+                                var dd = String(today.getDate()).padStart(2, '0');
+                                var mm = String(today.getMonth() + 1).padStart(2, '0');
+                                var yyyy = today.getFullYear();
+
+                                today = mm + '/' + dd + '/' + yyyy;
+                                document.write(today);
+                            </script>
+                            <br> <br>
+                        </div>
                         <div class="subtitle"><strong>Proyecto en R</strong></div>
                         <a href="#">read my profile</a><br>
                         <a href="#">sign my guestbook</a><br><br>
@@ -41,20 +54,9 @@
             <!-- content -->
             <div class="right">
                 <div class="post">
-                    <div class="date">
-                        <script>
-                            var today = new Date();
-                            var dd = String(today.getDate()).padStart(2, '0');
-                            var mm = String(today.getMonth() + 1).padStart(2, '0');
-                            var yyyy = today.getFullYear();
-
-                            today = mm + '/' + dd + '/' + yyyy;
-                            document.write(today);
-                        </script>
-                    </div>
-                    <div class="title">Analítica de Datos para la auditoría mediante lenguaje R</div>
                     <div class="entry">
 
+                        <div class="title">Analítica de Datos para la auditoría mediante lenguaje R</div>
                         <p>Esta es una página simple que busca mantener un registro de los plots obtenidos en un caso de
                             estudio
                             de auditoría utilizando lenguaje R.
@@ -73,16 +75,10 @@
                         <img src="evol_liq.png">
                         <hr>
                         <h2 id="forecast">forecast</h2>
-                        <img src="frcst_efect.png">
                         <img src="frcst_ingnet.png">
-                        <hr>
-                        <h2 id="stringr">stringr</h2>
+
                     </div>
                 </div>
-            </div>
-            <!-- footer -->
-            <div class="footer">
-                <b>2023</b>
             </div>
 </body>
 

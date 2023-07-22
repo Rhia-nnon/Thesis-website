@@ -1,13 +1,12 @@
 :root {
     --font-family: "Verdana", sans-serif;
     --font-size: 10px;
-    --sidebar-border: 3px double #E6E6C3;
+    --sidebar-border: 3px double rgb(160, 137, 121);
     --link-color: pink;
-    --bg-color: rgb(41, 45, 62) --text-color: rgb(165, 171, 208);
-    --sidebar-bg: transparent;
-    --content-bg: transparent;
+    --bg-color: rgb(253, 241, 205);
+    --text-color: rgb(160, 137, 121);
     --content-padding: 0;
-    --background-image: url(bg.gif);
+    --background-image: url("bg.gif");
 }
 
 body {
@@ -15,7 +14,7 @@ body {
     font-size: var(--font-size);
     background-color: var(--bg-color);
     color: var(--text-color);
-    background-image: var(--bg-image);
+    background-image: url("bg.gif");
 }
 
 body a {
@@ -33,7 +32,7 @@ body a {
     border: var(--sidebar-border);
     margin-bottom: 15px;
     padding-bottom: 10px;
-    background-color: var(--sidebar-bg);
+    background-color: rgb(41, 45, 62);
 }
 
 .flex {
@@ -43,6 +42,7 @@ body a {
 .container {
     width: 900px;
     margin: 0 auto;
+
 }
 
 .right {
@@ -65,6 +65,8 @@ body a {
 
 .footer {
     text-align: center;
+    padding: 10px;
+    margin: 50px;
 }
 
 .header {
@@ -87,10 +89,11 @@ body a {
 }
 
 content {
+    padding-top: 10px;
     display: flex;
     margin: 0 auto;
     width: 700px;
-    border: double #E6E6C3
+    border: double rgb(161, 137, 122);
 }
 
 .post .title {
@@ -106,6 +109,9 @@ content {
 
 .entry {
     padding-left: 10px;
+    border: 3px double rgb(161, 137, 122);
+    background-color: rgb(41, 45, 62);
+    color: rgb(161, 137, 122);
 }
 
 .postFooter {
@@ -143,8 +149,6 @@ content {
         margin-top: 20px;
     }
 }
-
-
 
 img {
     width: 600px;
