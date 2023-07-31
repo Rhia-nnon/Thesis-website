@@ -1,12 +1,10 @@
 :root {
     --font-family: "Verdana", sans-serif;
-    --font-size: 10px;
-    --sidebar-border: 3px double rgb(160, 137, 121);
+    --font-size: 14px;
     --link-color: pink;
-    --bg-color: rgb(253, 241, 205);
-    --text-color: rgb(160, 137, 121);
+    --bg-color: rgb(30, 32, 54);
+    --text-color: rgb(168, 184, 255);
     --content-padding: 0;
-    --background-image: url("bg.gif");
 }
 
 body {
@@ -14,7 +12,7 @@ body {
     font-size: var(--font-size);
     background-color: var(--bg-color);
     color: var(--text-color);
-    background-image: url("bg.gif");
+    padding: 10px;
 }
 
 body a {
@@ -22,17 +20,16 @@ body a {
 }
 
 .left {
-    width: 200px;
+
     display: flex;
     flex-wrap: wrap;
 }
 
 .box {
-    width: 200px;
-    border: var(--sidebar-border);
-    margin-bottom: 15px;
-    padding-bottom: 10px;
+    width: 250px;
+    padding: 10px;
     background-color: rgb(41, 45, 62);
+    padding: 5px;
 }
 
 .flex {
@@ -40,7 +37,7 @@ body a {
 }
 
 .container {
-    width: 900px;
+    width: auto;
     margin: 0 auto;
 
 }
@@ -71,7 +68,7 @@ body a {
 
 .header {
     display: flex;
-    flex-spacing: space-between;
+    letter-spacing: space-between;
     padding-bottom: 10px;
 }
 
@@ -93,25 +90,25 @@ content {
     display: flex;
     margin: 0 auto;
     width: 700px;
-    border: double rgb(161, 137, 122);
+    padding: 5px;
 }
 
 .post .title {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .post .date {
-    margin-bottom: 10px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .entry {
-    padding-left: 10px;
-    border: 3px double rgb(161, 137, 122);
+    padding: 10px;
     background-color: rgb(41, 45, 62);
-    color: rgb(161, 137, 122);
+    color: rgb(168, 184, 255);
 }
 
 .postFooter {
@@ -159,8 +156,22 @@ img {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
 }
 
 img:hover {
     transform: scale(1.5);
+}
+
+#texto {
+    text-align: justify;
+
+}
+
+h2 {
+    text-align: center;
 }

@@ -14,14 +14,9 @@
 
         <div class="header">
             <div class="header-left">
-                <a href="#">Contacto</a>: <a href="https://github.com/rhia-nnon">GitHub</a> -
-                <a href="https://github.com/Rhia-nnon/Thesis-website">Repositorio</a>
-            </div>
-            <div class="header-right">
-                <a href="#">Contenido</a> - <a href="#Datos">Datos</a> - <a href="#forecast">forecast</a> - <a
-                    href="#stringr">stringr</a>
 
             </div>
+
         </div>
         <!-- main content -->
         <div class="flex">
@@ -43,11 +38,13 @@
                             <br> <br>
                         </div>
                         <div class="subtitle"><strong>Proyecto en R</strong></div>
-                        <a href="#">read my profile</a><br>
-                        <a href="#">sign my guestbook</a><br><br>
                         <br>
-                        <strong>Correo:</strong> <a href="#">phyrxxne@outlook.com</a><br><br>
-                        <strong>Iniciado el:</strong> 2023/04/01
+                        <strong>Iniciado el:</strong> 2023/04/01 <br>
+                        <strong>GitHub: </strong><a href="https://github.com/rhia-nnon">Rhia-nnon</a><br>
+                        <strong>Repositorio: </strong><a
+                            href="https://github.com/Rhia-nnon/Thesis-website">Thesis-website</a>
+                        <strong>Correo:</strong> <a href="mailto:phyrxxne@outlook.com">phyrxxne@outlook.com</a><br><br>
+
                     </div>
                 </div>
             </div>
@@ -56,26 +53,43 @@
                 <div class="post">
                     <div class="entry">
 
-                        <div class="title">Analítica de Datos para la auditoría mediante lenguaje R</div>
-                        <p>Esta es una página simple que busca mantener un registro de los plots obtenidos en un caso de
-                            estudio
-                            de auditoría utilizando lenguaje R.
-                            El caso en cuestión puede ser encontrado <a
-                                href="https://github.com/Rhia-nnon/Script-R-Thesis">acá</a> </p>
-                        <p>Los paquetes a estudiar son forecast y stringr</p>
+                        <center>
+                            <div class="title">
+                                <h2>Analítica de Datos para la auditoría mediante lenguaje R</h2>
+                            </div>
+                        </center>
+                        <p>Esta página está destinada a mantener un registro de los plots obtenidos en un estudio de
+                            caso de auditoría financiera.<br><br>
+                            <strong>Objetivo General: </strong> Identificar las capacidades y limitaciones que tienen
+                            las librerías forecast y stringr para ser aplicadas en el campo de la auditoría.<br><br>
+                            Si deseas ver el código fuente con el cual fue desarrollada la base de este proyecto, puedes
+                            encontrarla <a href="https://github.com/Rhia-nnon/Script-R-Thesis">acá</a>
+                        </p>
 
                         <p><b>forecast:</b> Este paquete busca generar pronósticos en base a la información contenida
-                            en una base de datos.</p>
+                            en una base de datos. Para efectos de esta investigación, solamente se tendrán en
+                            consideración los
+                            modelos ARIMA y ETS.</p>
                         <p><b>stringr:</b> Esta librería ofrece diferentes funciones para poder trabajar con cadenas de
-                            texto.</p>
+                            caracteres.</p>
                         <hr>
-                        <h2 id="Datos">Datos de los Estados Financieros</h2>
-                        <img src="evol_acc.png">
-                        <img src="evol_cnet.png">
-                        <img src="evol_liq.png">
-                        <hr>
-                        <h2 id="forecast">forecast</h2>
-                        <img src="frcst_ingnet.png">
+                        <div id="texto">
+                            <h2 id="Datos">Datos de los Estados Financieros</h2>
+
+                            <img src="evol_acc.png">
+                            <img src="evol_cnet.png">
+                            <img src="evol_liq.png">
+                            <hr>
+                            <h2 id="forecast">forecast</h2>
+                            <img src="ingnet_fr.png">
+                            <legend>Este pronóstico indica las variaciones que podrían tener los ingresos netos para los
+                                periodos 2024 y 2025, fue obtenido a través del método ARIMA
+                                dado que presenta estacionalidad en sus datos.
+                            </legend>
+                            <img src="liq_fr.png">
+                            <hr>
+                            <h2 id="stringr">stringr</h2>
+                        </div>
 
                     </div>
                 </div>
