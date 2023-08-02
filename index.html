@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <div class="container">
 
         <div class="header">
@@ -52,12 +53,38 @@
             <div class="right">
                 <div class="post">
                     <div class="entry">
-
+                        <button id="bdark">Cambiar modo</button>
                         <center>
                             <div class="title">
                                 <h2>Analítica de Datos para la auditoría mediante lenguaje R</h2>
                             </div>
                         </center>
+
+                        <script>
+                            const bdark = document.querySelector("#bdark");
+                            const body = document.querySelector("body");
+
+                            load();
+
+                            bdark.addEventListener("click", e => {
+                                body.classList.toggle("lightmode");
+                                store(body.classList.contains("lightmode"));
+                            });
+
+                            function load() {
+                                const lightmode = localStorage.getItem("lightmode");
+
+                                if (!lightmode) {
+                                    store("false");
+                                } else if (lightmode == "true") {
+                                    body.classList.add("lightmode");
+                                }
+                            }
+
+                            function store(value) {
+                                localStorage.setItem("lightmode", value)
+                            }
+                        </script>
                         <p>Esta página está destinada a mantener un registro de los plots obtenidos en un estudio de
                             caso de auditoría financiera.<br><br>
                             <strong>Objetivo General: </strong> Identificar las capacidades y limitaciones que tienen
@@ -76,17 +103,17 @@
                         <div id="texto">
                             <h2 id="Datos">Datos de los Estados Financieros</h2>
 
-                            <img src="evol_acc.png">
-                            <img src="evol_cnet.png">
-                            <img src="evol_liq.png">
+                            <img alt="evol_acc" src="evol_acc.png">
+                            <img alt="evol_cnet" src="evol_cnet.png">
+                            <img alt="evol_liq" src="evol_liq.png">
                             <hr>
                             <h2 id="forecast">forecast</h2>
-                            <img src="ingnet_fr.png">
+                            <img alt="ingnet_fr" src="ingnet_fr.png">
                             <legend>Este pronóstico indica las variaciones que podrían tener los ingresos netos para los
                                 periodos 2024 y 2025, fue obtenido a través del método ARIMA
                                 dado que presenta estacionalidad en sus datos.
                             </legend>
-                            <img src="liq_fr.png">
+                            <img alt="liq_fr" src="liq_fr.png">
                             <hr>
                             <h2 id="stringr">stringr</h2>
                         </div>
@@ -94,6 +121,7 @@
                     </div>
                 </div>
             </div>
+
 </body>
 
 </html>

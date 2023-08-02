@@ -175,3 +175,29 @@ img:hover {
 h2 {
     text-align: center;
 }
+
+body.lightmode {
+    background: #d2d3db;
+    color: black;
+}
+
+.lightmode .entry {
+    background: #adadad;
+    color: black;
+
+}
+
+.lightmode .box {
+    background: #adadad;
+    color: black;
+}
+
+.lightmode a {
+    color: blue;
+}
+
+button {
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
+}
