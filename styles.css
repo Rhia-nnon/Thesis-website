@@ -19,8 +19,17 @@ body a {
     color: var(--link-color);
 }
 
-.left {
+#leftlist {
+    list-style: none;
+    float: left;
+}
 
+#leftli {
+    list-style: none;
+    float: left;
+}
+
+.left {
     display: flex;
     flex-wrap: wrap;
 }
@@ -30,6 +39,8 @@ body a {
     padding: 10px;
     background-color: rgb(41, 45, 62);
     padding: 5px;
+    text-align: justify;
+    margin-left: 1px;
 }
 
 .flex {
@@ -39,6 +50,7 @@ body a {
 .container {
     width: auto;
     margin: 0 auto;
+    text-align: justify;
 
 }
 
@@ -50,9 +62,9 @@ body a {
 }
 
 .subtitle {
-    font-weight: bold;
     padding-top: 3px;
     margin-bottom: 5px;
+    margin-left: 1px;
 }
 
 .boxwrap {
@@ -91,6 +103,7 @@ content {
     margin: 0 auto;
     width: 700px;
     padding: 5px;
+    text-align: justify;
 }
 
 .post .title {
@@ -101,7 +114,7 @@ content {
 }
 
 .post .date {
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
 }
 
@@ -109,6 +122,7 @@ content {
     padding: 10px;
     background-color: rgb(41, 45, 62);
     color: rgb(168, 184, 255);
+    text-align: justify;
 }
 
 .postFooter {
@@ -164,12 +178,11 @@ img {
 }
 
 img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 #texto {
     text-align: justify;
-
 }
 
 h2 {
@@ -179,11 +192,13 @@ h2 {
 body.lightmode {
     background: #d2d3db;
     color: black;
+    text-align: justify;
 }
 
 .lightmode .entry {
     background: #adadad;
     color: black;
+    text-align: justify;
 
 }
 
@@ -200,4 +215,8 @@ button {
     display: flex;
     margin-right: 10px;
     margin-left: auto;
+}
+
+legend {
+    font-style: italic;
 }

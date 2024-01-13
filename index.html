@@ -19,9 +19,7 @@
             </div>
 
         </div>
-        <!-- main content -->
         <div class="flex">
-            <!-- sidebar -->
             <div class="left">
                 <div class="box">
                     <div class="boxwrap">
@@ -38,13 +36,19 @@
                             </script>
                             <br> <br>
                         </div>
-                        <div class="subtitle"><strong>Proyecto en R</strong></div>
+                        <div class="subtitle"><strong>Proyecto en R</strong>
+                            <ul id="leftlist">
+                                <li> <strong>Iniciado el: <br> 2023/04/01</strong></li>
+                                <li> <strong>GitHub: <br></strong><a href="https://github.com/rhia-nnon">Rhia-nnon</a>
+                                </li>
+                                <li> <strong>Repositorio: <br> </strong><a
+                                        href="https://github.com/Rhia-nnon/Thesis-website">Thesis-website</a></li>
+                                <li><strong>Correo:<br></strong> <a
+                                        href="mailto:phyrxxne@outlook.com">phyrxxne@outlook.com</a>
+                                </li>
+                            </ul>
+                        </div>
                         <br>
-                        <strong>Iniciado el:</strong> 2023/04/01 <br>
-                        <strong>GitHub: </strong><a href="https://github.com/rhia-nnon">Rhia-nnon</a><br>
-                        <strong>Repositorio: </strong><a
-                            href="https://github.com/Rhia-nnon/Thesis-website">Thesis-website</a>
-                        <strong>Correo:</strong> <a href="mailto:phyrxxne@outlook.com">phyrxxne@outlook.com</a><br><br>
 
                     </div>
                 </div>
@@ -60,31 +64,8 @@
                             </div>
                         </center>
 
-                        <script>
-                            const bdark = document.querySelector("#bdark");
-                            const body = document.querySelector("body");
+                        <script src="dist/index.js"></script>
 
-                            load();
-
-                            bdark.addEventListener("click", e => {
-                                body.classList.toggle("lightmode");
-                                store(body.classList.contains("lightmode"));
-                            });
-
-                            function load() {
-                                const lightmode = localStorage.getItem("lightmode");
-
-                                if (!lightmode) {
-                                    store("false");
-                                } else if (lightmode == "true") {
-                                    body.classList.add("lightmode");
-                                }
-                            }
-
-                            function store(value) {
-                                localStorage.setItem("lightmode", value)
-                            }
-                        </script>
                         <p>Esta página está destinada a mantener un registro de los plots obtenidos en un estudio de
                             caso de auditoría financiera.<br><br>
                             <strong>Objetivo General: </strong> Identificar las capacidades y limitaciones que tienen
@@ -99,25 +80,35 @@
                             modelos ARIMA y ETS.</p>
                         <p><b>stringr:</b> Esta librería ofrece diferentes funciones para poder trabajar con cadenas de
                             caracteres.</p>
+
+                        <section>
+                            <p>Sé que el código puede estar lleno de errores ¡pero aún sigo aprendiendo de manera
+                                autodidacta! </p>
+                        </section>
                         <hr>
                         <div id="texto">
-                            <h2 id="Datos">Datos de los Estados Financieros</h2>
-
-                            <img alt="evol_acc" src="evol_acc.png">
-                            <img alt="evol_cnet" src="evol_cnet.png">
-                            <img alt="evol_liq" src="evol_liq.png">
+                            <h3>Información relevante</h3>
+                            El dataset utilizado contiene información sobre las ventas de una tienda X, donde la tabla
+                            incorpora el ID de la
+                            tienda, del producto, así también la cantidad de ventas realizadas de manera diaria, para un
+                            periodo comprendido entre
+                            el 01 de enero del año 2013, hasta el 31 de diciembre del año 2017.
                             <hr>
-                            <h2 id="forecast">forecast</h2>
-                            <img alt="ingnet_fr" src="ingnet_fr.png">
-                            <legend>Este pronóstico indica las variaciones que podrían tener los ingresos netos para los
-                                periodos 2024 y 2025, fue obtenido a través del método ARIMA
-                                dado que presenta estacionalidad en sus datos.
-                            </legend>
-                            <img alt="liq_fr" src="liq_fr.png">
-                            <hr>
-                            <h2 id="stringr">stringr</h2>
+                            <h3>Análisis de la serie temporal</h3>
+                            Previo a realizar cualquier clase de pronóstico es menester un análisis a la serie temporal.
+                            Para ello es posible servirse de las siguientes funciones:
+                            <ul>
+                                <li>ggAcf()</li>
+                                <li>Pacf()</li>
+                                <li>adf.test()</li>
+                                <li>checkresiduals()</li>
+                                <li>decompose()</li>
+                            </ul>
+                            <h4>Imagen n°1:</h4>
+                            <img src="Rplot01.png">
+                            <h4>Imagen n°2:</h4>
+                            <img src="Rplot02.png">
                         </div>
-
                     </div>
                 </div>
             </div>
